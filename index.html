@@ -9,21 +9,30 @@
     </head>
     <body>
         <div class="container">
-            <div class="row" hidden>
-                <div class="col-md-12 jumbotron">
+            <div class="row jumbotron">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
                     <h1>
                         Word Guess Game!!!
                     </h1>
                 </div>
+                <div class="col-md-1">
+                    <h3 id="wins"></h2>
+                </div>
+            </div>
+            <div class="row" id="game" hidden>
                 <div class="jumbotron col-md-4">
                     <h2>Guessed letters: <span id="guesses"></span></h2>
                 </div>
                 <div class="col-md-4" id="text"></div>
+                <div class="jumbotron col-md-4">
+                    <h2>Remaining guesses: <span id="remaining"></span></h2>
+                </div>
             </div>
-            <div class="row">
+            <div class="row" id="intro">
                 <div class="jumbotron col-md-12">
-                    <h1>
-                        Press any key to start the game!
+                    <h1 id="introText">
+                        Press any letter to start the game!
                     </h1>
                 </div>
             </div>
